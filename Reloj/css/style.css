@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    src: url("../img/reloj.png");
+}
+
+.foto{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.analog-clock {
+    width: 200px;
+    height: 200px;
+    border: 6px solid #333;
+    border-radius: 50%;
+    position: relative;
+}
+
+.hour-hand, .minute-hand, .second-hand {
+    position: absolute;
+    transform-origin: 50% 100%;
+    background-color: #333;
+    transition: all 0.5s;
+}
+
+.hour-hand {
+    width: 8px;
+    height: 40px;
+    top: 50px;
+    left: 96px;
+}
+
+.minute-hand {
+    width: 6px;
+    height: 60px;
+    top: 50px;
+    left: 97px;
+}
+
+.second-hand {
+    width: 2px;
+    height: 70px;
+    background-color: red;
+    top: 50px;
+    left: 98px;
+}
+
+.digital-clock {
+    font-size: 36px;
+    margin-left: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
